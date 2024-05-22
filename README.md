@@ -31,7 +31,7 @@ message Test1 {
 # binary
 0A 09 ED 85 8C EC 8A A4 ED 8A B8
 """
-from protobuf_decoder.protobuf_decoder import Parser
+from protobuf_decoder.protobuf_decoder import Parser, ParsedResults ,ParsedResult
 
 test_target = "0A 09 ED 85 8C EC 8A A4 ED 8A B8"
 parsed_data = Parser().parse(test_target)
@@ -60,7 +60,7 @@ message Test2 {
 # binary
 1a 03 08 96 01
 """
-from protobuf_decoder.protobuf_decoder import Parser
+from protobuf_decoder.protobuf_decoder import Parser, ParsedResults ,ParsedResult
 
 test_target = "1a 03 08 96 01"
 parsed_data = Parser().parse(test_target)
@@ -91,7 +91,7 @@ message Test1 {
 0A 03 E2 9C 8A
 
 """
-from protobuf_decoder.protobuf_decoder import Parser
+from protobuf_decoder.protobuf_decoder import Parser, ParsedResults ,ParsedResult
 
 test_target = "0A 03 E2 9C 8A"
 parsed_data = Parser().parse(test_target)
